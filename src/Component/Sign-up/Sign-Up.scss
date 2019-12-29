@@ -1,0 +1,22 @@
+.sign-up {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+
+
+    .title {
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .sign-up {
+        width: 100%;
+        margin-top: 30%;
+
+        .header {
+            width: 100%;
+            font-size: 30px;
+        }
+    }
+}

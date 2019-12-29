@@ -1,0 +1,13 @@
+.shop-page {
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+@media screen and (max-width: 1000px) {
+    .shop-page {
+        width: 150%;
+        margin-left: -15%; 
+    }
+}

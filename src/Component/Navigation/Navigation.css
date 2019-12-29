@@ -1,0 +1,28 @@
+.logo-header {
+    font-family: 'Pacifico', cursive;
+}
+.home-menu {
+    color: grey;
+    font-weight: bold;
+    margin-left: 49rem;
+}
+.other-menu {
+    color: grey;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+@media screen and (max-width: 1000px) {
+    .logo {
+        width: 100px;
+    }
+    .home-menu {
+        margin-left: 1rem;
+    }
+    .nav-back {
+        width: 300px;
+    }
+    .logo-header {
+        font-size: 20px;
+        margin-left: -50%;
+    }
+}
