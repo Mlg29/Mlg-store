@@ -32,11 +32,12 @@
 
   @media screen and (max-width: 1000px) {
     .checkout-page {
-      width: 100%;
+      width: 80%;
 
       .checkout-header {
         width: 100%;
         margin-left: 0%;
+        font-size: 10px;
 
         .header-block {
           margin: 1%;
@@ -46,16 +47,16 @@
       }
 
       .checkout-item {
-        width: 200%;
-        font-size: 15px;
+        width: 100%;
+        font-size: 10px;
 
         .image-container {
           width: 15%;
-          margin-left: 25%;
+          margin-left: 5%;
         }
         .name {
           width: 0%;
-          font-size: 15px;
+          font-size: 12px;
           margin-left: 15px;
          
         }

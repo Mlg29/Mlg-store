@@ -1,5 +1,5 @@
 .collection-item {
-    width: 16vw; //240px
+    width: 22vw; //240px
     display: flex;
     flex-direction: column;
     height: 350px;
@@ -54,16 +54,38 @@
 
   @media screen and (max-width: 1000px) {
     .collection-item {
-      width: 100vw;
+      width: 40vw;
 
+
+      &:hover {
         .image {
+          opacity: unset;
+        }
+        .custom-button {
+          opacity: unset;
+          
+        }
+      }
+        .custom-button {
+        min-width: unset;
+        font-size: 10px;
+        opacity: 0.9;
+        padding: 0 10%;
+        display: block;
+      }
+
+      .collection-footer {
         width: 100%;
-        background-size: cover;
-        background-position: center;
+        height: 5%;
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+    
+    
+        .price {
+          width: 10%;
+        }
       }
     }
     
-    .collection-footer {
-        margin: 3%;
-      }
   }

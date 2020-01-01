@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
+import './App.scss';
 import Homepage from "../src/Pages/Hompage"
 import ShopPage from "../src/Pages/Shop"
 import Form from "../src/Pages/Form"
@@ -13,12 +13,11 @@ import Checkout from "../src/Component/Checkout"
 import { selectCurrentUser } from './redux/userReducer/user-selector';
 import { createStructuredSelector } from "reselect"
 
-
 class App extends Component {
   unSubscribeFromAuth = null
   
   componentDidMount() {
-    const { setCurrentUser } = this.props
+    const { setCurrentUser} = this.props
 
     this.unSubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
       if (userAuth) {
@@ -34,6 +33,7 @@ class App extends Component {
         })
       }
       setCurrentUser(userAuth)
+     
     })
   }
   componentWillUnmount() {
@@ -58,7 +58,7 @@ class App extends Component {
 
 }
 const mapStateToProps = createStructuredSelector({
-  currentUser: selectCurrentUser
+  currentUser: selectCurrentUser,
 })
 
 const mapDispatchToProps = dispatch => ({

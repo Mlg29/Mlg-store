@@ -18,3 +18,20 @@
     }
   }
   
+@media screen and (max-width: 1000px) {
+  .collection-page {
+    align-items: center;
+  
+  
+  
+    .items {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 15px;
+  
+      & .collection-item {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

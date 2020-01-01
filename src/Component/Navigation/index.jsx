@@ -1,5 +1,5 @@
 import React from "react"
-import "./Navigation.css"
+import "./Navigation.scss"
 import { Navbar, Nav,} from "react-bootstrap"
 import { auth } from "../../Firebase/firebase.utils"
 import { connect } from "react-redux"

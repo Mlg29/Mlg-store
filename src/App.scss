@@ -1,0 +1,11 @@
+body {
+  padding: 20px 60px;
+
+
+  @media screen and (max-width: 800px) {
+    padding: 0px;
+  }
+}
+* {
+  box-sizing: border-box;
+}

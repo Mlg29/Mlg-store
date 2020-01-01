@@ -14,16 +14,16 @@
     }
   }
   
-  @media screen and (max-width: 1000px) {
-    .collection-preview {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
+ @media screen and (max-width: 1000px) {
+    .collection-preview {  
+      align-items: center;
+
+      
+        .preview {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+      }
     }
-    .preview {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      margin: -8px;
-    }
-  }
+    
+  } 
